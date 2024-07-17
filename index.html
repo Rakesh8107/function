@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        // input = this is my country
+        // output = {this = 4, is = 2, my= 2, country = 7}
+        function wordLengths(input) {
+    const words = input.split(' ');
+    const result = {};
+
+    words.forEach(word => {
+        result[word] = word.length;
+    });
+
+    return result;
+}
+
+const input = 'this is my country';
+const output = wordLengths(input);
+console.log(output);
+    </script>
+</body>
+</html>
